@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_lv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="handleVM"
+            android:text="LiveData ViewModel" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="handleRoom"
+            android:text="ROOM" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_paging"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="handlePaging"
+            android:text="Paging" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_vp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="handleVP2"
+            android:text="ViewPager2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_fs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="handleFs"
+            android:text="FragmentSycn" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_data_binding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="handleDataBinding"
+            android:text="DataBinding" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_data_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="handleDataStore"
+            android:text="DataStore" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

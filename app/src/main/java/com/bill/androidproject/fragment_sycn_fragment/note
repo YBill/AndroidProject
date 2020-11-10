@@ -1,0 +1,14 @@
+Activity 和多个 Fragment 之间数据同步
+
+主要通过下面代码
+
+viewModel = ViewModelProviders.of(activity).get(MyViewModel.class);
+viewModel.getLiveData().observe(activity/fragment, new Observer<Integer>() {
+            @Override
+            public void onChanged(Integer integer) {
+                Log.e("Bill", "Activity:" + integer);
+            }
+        });
+
+在 Activity 和 Fragment 中都通过这样的方式就可以同步数据了，订阅了 LiveData 的变化，会回调到 onChanged 中，
+特别注意：ViewModelProviders.of() 中的参数必须是 activity 才能保持 Activity 和 Fragment 保持同步
