@@ -6,6 +6,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.bill.androidproject.databinding.DataBindingActivity;
 import com.bill.androidproject.fragment_sycn_fragment.FragmentSycnActivity;
 import com.bill.androidproject.lv.LVTestActivity;
 import com.bill.androidproject.paging.PagingTestActivity;
@@ -42,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void handleDataBinding(View view) {
+        startActivity(new Intent(this, DataBindingActivity.class));
     }
 
     public void handleDataStore(View view) {
