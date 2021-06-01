@@ -6,6 +6,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.bill.androidproject.dagger2.Dagger2Activity;
 import com.bill.androidproject.databinding.DataBindingActivity;
 import com.bill.androidproject.fragment_sycn_fragment.FragmentSycnActivity;
 import com.bill.androidproject.lv.LVTestActivity;
@@ -48,4 +49,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void handleDataStore(View view) {
     }
+
+    public void handleDagger2(View view) {
+        startActivity(new Intent(this, Dagger2Activity.class));
+    }
+
 }

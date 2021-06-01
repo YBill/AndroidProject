@@ -60,6 +60,13 @@
             android:onClick="handleDataStore"
             android:text="DataStore" />
 
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_dagger2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="handleDagger2"
+            android:text="Dagger2" />
+
     </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>

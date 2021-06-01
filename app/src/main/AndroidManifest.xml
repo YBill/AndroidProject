@@ -10,6 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".dagger2.Dagger2Activity" />
         <activity android:name=".databinding.DataBindingActivity" />
         <activity android:name=".vp2.ViewPager2Activity" />
         <activity android:name=".fragment_sycn_fragment.FragmentSycnActivity" />
